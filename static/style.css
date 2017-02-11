@@ -1,0 +1,112 @@
+body{
+	background-image: url("/static/car.jpg"); }
+
+h1 {
+	color: #272c46;}
+
+.container {
+	align: center;
+	border-radius: 4px;
+	width: 80%;
+  	display: table;
+	padding: 1%;
+	background-color: #1F2739;}
+
+.container table {
+	border-collapse: collapse;
+	border-spacing: 8%;
+	font-family: Verdana;
+	font-size: 86%;}
+
+.container th h1 {
+	border-collapse: collapse;
+	background-color: #272c46;
+	font-weight: bold;
+	font-size: 1em;
+  	text-align: center;
+  	color: #185875;}
+
+.container td {
+	border-collapse: collapse;
+	font-weight: normal;
+	font-size: 1em;}
+
+.container td, .container th {
+	border-collapse: collapse;
+	padding: 1%;}
+
+.container tr:nth-child(odd) {
+	border-collapse: collapse;
+	color: black;
+	background-color: #c1ded7;}
+
+.container tr:nth-child(even) {
+	border-collapse: collapse;
+	color: #6a7279;
+	background-color: #272c46;}
+
+.container th {
+	border-collapse: collapse;
+	background-color: #1F2739;}
+
+.container tr:first-child {
+	border-collapse: collapse;
+	text-align: center;
+	color: #fbf6ef;
+	background-color: #367780;}
+
+.butn{
+	border-radius: 8%;
+	align: center;
+	text-align: center;
+	width: 10%;
+	background-color: #1F2739;
+	padding: 0.2%;}
+
+
+.butn:hover{
+	border-radius: 0%;
+	align: center;
+	text-align: center;
+	width: 10%;
+	background-color: #0c1b40;
+	padding: 0.2%;}
+
+.butn a {
+	align: center;
+	color: #c1ded7;
+	text-decoration: none;}
+
+.niceform{
+	padding: 2%;
+	width: 40%;
+	background-color: #c1ded7;
+	border-radius: 2%;
+	line-height: 186%}
+
+.niceform textarea {
+    width: 100%;
+    height: 150px;
+    padding: 4%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+	color:#0c1b40;}
+
+.niceform input[type=text] {
+	width: 80%;
+	height: 6%;
+    background-color: #f8f8f8;
+    color: black; }
+
+.niceform input[type=number] {
+	width: 20%;
+	height: 6%;
+    background-color: #f8f8f8;
+    color: black; }
+
+.niceform input:focus {
+    border: 3px solid #555;}
+
