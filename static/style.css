@@ -18,13 +18,14 @@ h1 {
 	font-family: Verdana;
 	font-size: 86%;}
 
-.container th h1 {
-	border-collapse: collapse;
-	background-color: #272c46;
+.container th{
+	background-color: #4a7bac;
+	font-family: Verdana;
 	font-weight: bold;
 	font-size: 1em;
   	text-align: center;
-  	color: #185875;}
+  	color: #edf2f9;
+	padding: 1%;}
 
 .container td {
 	border-collapse: collapse;
@@ -36,12 +37,10 @@ h1 {
 	padding: 1%;}
 
 .container tr:nth-child(odd) {
-	border-collapse: collapse;
 	color: black;
 	background-color: #c1ded7;}
 
 .container tr:nth-child(even) {
-	border-collapse: collapse;
 	color: #6a7279;
 	background-color: #272c46;}
 
@@ -96,14 +95,12 @@ h1 {
 	color:#0c1b40;}
 
 .niceform input[type=text] {
-	width: 80%;
+	width: 70%;
 	height: 6%;
     background-color: #f8f8f8;
     color: black; }
 
 .niceform input[type=number] {
-	width: 20%;
-	height: 6%;
     background-color: #f8f8f8;
     color: black; }
 

@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/and/list')
 def show_user_stories():
     entries = UserStory.select().order_by(UserStory.id.asc())
-    return render_template('user_stories.html', entries=entries)
+    return render_template('list.html', entries=entries)
 
 @app.route('/process', methods=['POST'])
 def new_us():
@@ -18,6 +18,10 @@ def new_us():
     status=request.form['status']
     us = UserStory.create(title=title, story_text=story_text, acceptance_criteria=acceptance_criteria, buisness_value=buisness_value, estimation=estimation, status=status)
     us.save()
+    return redirect(url_for('show_user_stories'))
+
+@app.route('/')
+def index_page():
     return redirect(url_for('show_user_stories'))
 
 @app.route('/update', methods=['POST'])
@@ -44,7 +48,7 @@ def edit_us(story_id):
     if story==None:
         return redirect(url_for('show_user_stories'))
     else:
-        return render_template('edit_story.html', story=story)
+        return render_template('form_.html', story=story)
 
 @app.route('/delete/<story_id>', methods=['GET'])
 def delete(story_id):
@@ -57,7 +61,7 @@ def delete(story_id):
 
 @app.route('/story', methods=['POST', 'GET'])
 def render_form():
-    return render_template('add_story.html')
+    return render_template('form_.html')
 
 if __name__ == '__main__':
     app.run()
